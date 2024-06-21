@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskList</title>
+</head>
+<body>
+    <table border="5">
+        <tr>
+            <th>
+                Task Name
+            </th>
+            <th>
+                is_Done
+            </th>
+        </tr>
+        {% for task in tasklist: %}
+        <tr>
+            <td>
+               {{ task[0] }}
+            </td>
+            <td>
+                {{ task[1] }}
+            </td>
+        </tr>
+         {% endfor %}    
+    </table>
+</body>
+</html>
